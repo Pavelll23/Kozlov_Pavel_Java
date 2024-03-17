@@ -10,7 +10,6 @@ public class Main {
         double a = variable.nextDouble();
         double b = variable.nextDouble();
         String comparison = compare.comp(a, b);
-        double result;
         System.out.println("Результат сравнения :" + comparison);
         double addition = calc.calculator(a, b);
         System.out.println("Результат сложения :" + addition);
@@ -26,8 +25,16 @@ public class Main {
         StringCompareService text = new StringCompareService();
         String c = word.next();
         String d = word.next();
-        String eaqelsWord = text.com(c , d);
+        String eaqelsWord = text.com(c, d);
         System.out.println(eaqelsWord);
+
+        System.out.println("Четные числа из массива :");               // Задание 3
+        int number[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        for (int i = 0; i < number.length; i++) {
+            if (number[i] % 2 == 0) {
+                System.out.println(" Number: " + number[i]);
+            }
+        }
 
     }
 }
