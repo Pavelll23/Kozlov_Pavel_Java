@@ -7,6 +7,7 @@ public class StringCompareService {
         } else {
             result = "Строки неидентичны";
         }
+        System.out.println(result);
         return result;
     }
 }
