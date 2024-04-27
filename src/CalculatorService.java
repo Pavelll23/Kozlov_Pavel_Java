@@ -16,14 +16,13 @@ public class CalculatorService {
 
     public double div(double a, double b) {        // Деление
         if(b <= 0){
-            System.out.println("На ноль делить нельзя !!!");
-            System.exit(0);
+            System.out.println("Результат деления : На ноль делить нельзя !!!");
         } else {
             b = b;
+            double division = (a / b);
+            System.out.println("Результат деления :" + division);
         }
-        double division = (a / b);
-        System.out.println("Результат деления :" + division);
-        return division;
+        return 0;
     }
 
     public double mult(double a, double b) {        // Умножение
